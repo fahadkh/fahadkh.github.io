@@ -37,7 +37,12 @@
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-      padding: 60px 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  .information {
+      padding-top: 60px;
+      padding-bottom: 60px;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -193,7 +198,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -220,7 +225,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="about" class="container-fluid information">
   <div class="row">
     <div class="col-sm-8">
       <h2>About Company Page</h2><br>
@@ -234,7 +239,7 @@
   </div>
 </div>
 
-<div class="container-fluid bg-grey">
+<div class="container-fluid bg-grey information">
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
@@ -249,7 +254,7 @@
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<div id="services" class="container-fluid text-center information">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
@@ -291,7 +296,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center bg-grey information">
   <h2>Portfolio</h2><br>
   <h4>What we have created</h4>
   <div class="row text-center slideanim">
@@ -353,7 +358,7 @@
 </div>
 
 <!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
+<div id="pricing" class="container-fluid information">
   <div class="text-center">
     <h2>Pricing</h2>
     <h4>Choose a payment plan that works for you</h4>
@@ -420,7 +425,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid bg-grey information">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
