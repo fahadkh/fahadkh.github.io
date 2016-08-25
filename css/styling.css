@@ -136,8 +136,8 @@ h4 {
 }
 /* Dropdown menu */
 .open .dropdown-toggle {
-    color: #fff !important;
-    background-color: #f4511e !important;
+    color: #f4511e !important;
+    background-color: #fff !important;
 }
 .dropdown-menu {
     background-color: #fff !important;
