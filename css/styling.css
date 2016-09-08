@@ -17,6 +17,13 @@ h4 {
     font-weight: 400;
     margin-bottom: 30px;
 }
+a {
+    text-decoration: none;
+    color: #818181;
+}
+a:hover {
+    text-decoration: none;
+}
 .jumbotron {
     color: #fff;
     background: url(../assets/CoverAlt3.jpg) no-repeat top center;
@@ -87,7 +94,7 @@ h4 {
 .panel {
     top: -20px;
     padding-top: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 15px;
     border-radius:0 !important;
     transition: box-shadow 0.5s;
     border: none;
