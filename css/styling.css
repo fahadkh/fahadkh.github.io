@@ -87,6 +87,7 @@ h4 {
 .panel {
     top: -20px;
     padding-top: 20px;
+    margin-bottom: 30px;
     border-radius:0 !important;
     transition: box-shadow 0.5s;
     border: none;
