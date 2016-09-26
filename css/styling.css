@@ -29,13 +29,13 @@ a:hover {
     font-family: Montserrat, sans-serif;
 }
 .jumbotron-main {
-    background: url(../assets/CoverAlt3.jpg) no-repeat top center;
+    background: url(../assets/CoverAlt3.jpg) no-repeat top center scroll;
     background-color: gray !important;
     background-size: cover;
     padding: 14em 25px;
 }
 .jumbotron-formula{
-    background: url(../assets/ironskeleton.jpg) no-repeat top center;
+    background: url(../assets/ironskeleton.jpg) no-repeat top center scroll;
     background-color: gray !important;
     background-size: cover;
     padding: 14em 25px;
@@ -72,6 +72,10 @@ a:hover {
 .thumbnail img {
     width: 100%;
     margin-bottom: 10px;
+}
+.proj-desc {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .carousel-control.right, .carousel-control.left {
     background-image: none;

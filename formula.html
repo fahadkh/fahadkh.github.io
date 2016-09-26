@@ -51,11 +51,11 @@
 <!-- Container (About Section) -->
 <div id="NFR About" class="container-fluid information">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <h2>Northwestern Formula Racing</h2><br>
-      <p>Formula SAE is an intercollegiate competition where students design, build, and compete using an F1 style open wheel racecar. Northwestern Formula Racing brings this competetive environment to the students at Northwestern University. Over my 3 years on the team I have worked primarily with the powertrain and electronics subteams, where we are responsible for making the car go fast without blowing up or tearing itself apart. I have seen the team's </p>
+      <p>Formula SAE is an intercollegiate competition where students design, build, and compete using an F1 style open wheel racecar. Northwestern Formula Racing brings this competetive environment to the students at Northwestern University. Over my 3 years on the team I have worked primarily with the powertrain and electronics subteams, where we are responsible for making the car go fast without blowing up or tearing itself apart. </p>
     </div>
-    <div class="col-sm-4 text-center">
+    <div class="col-sm-5 text-center">
       <img src="assets/michigan_formula.jpg" class="img-responsive"></img>
     </div>
   </div>
@@ -76,57 +76,65 @@
 
 <!-- Container (Services Section) -->
 <div id="Electron_proj" class="container-fluid text-center information">
-  <h2>Electronics</h2>
-  <h4>Project details</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4 skill-tile">
-      <span class="glyphicon glyphicon-pencil logo-small"></span>
-      <h4>DEVELOPMENT</h4>
-      <p>Strong experience in C/C++, Python, and Java</p>
+  <h2>Electronics Projects</h2>
+  <h4>Cockpit Controls</h4>
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div class="thumbnail proj-desc">
+        <img src="assets/michigan_formula.jpg" alt="PDM">
+        <p>A multifunction steering wheel that displays telemetry through an LCD display, provides shift paddles and shift lights for quicker shifting, a traction control setting dial, and buttons for managing launch control. All this is controlled by software running on a Teensy microcontroller embeded within the carbon fiber steering wheel.</p>
+      </div>
     </div>
-    <div class="col-sm-4 skill-tile">
-      <span class="glyphicon glyphicon-cloud logo-small"></span>
-      <h4>NETWORKING</h4>
-      <p>Extensive work in cloud computing, sensor networks, and network protocols (HTTP, TCP/UDP, CAN, Ethernet)</p>
-    </div>
-    <div class="col-sm-4 skill-tile">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>SECURITY</h4>
-      <p>Classroom and work experience in network and cloud security</p>
+    <div class="col-sm-6">
+      <div class="thumbnail proj-desc">
+        <img src="assets/michigan_formula.jpg" alt="wheel">
+        <p>A pneumatic shifting system allows millisecond shifts through full integration of pneumatic actuators, a communication network, and a controller that consists of a Teensy microcontroller. Programming optimizes shifts by cutting ignition on upshifts to bypass the clutch entirely and also offers autoshifts based on gearing calculations for faster acceleration times.</p>
+      </div>
     </div>
   </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4 skill-tile">
-      <span class="glyphicon glyphicon-hdd logo-small"></span>
-      <h4>ENVIRONMENTS</h4>
-      <p>Experience with Linux, Windows, Android, and microcontrollers</p>
-    </div>
-    <div class="col-sm-4 skill-tile">
-      <span class="glyphicon glyphicon-picture logo-small"></span>
-      <h4>UI/GRAPHIC DESIGN</h4>
-      <p>Working knowledge of Photoshop, HTML, CSS, Javascript, and Bootstrap</p>
-    </div>
-    <a href="https://drive.google.com/file/d/0B2wHvuRgrcN6bXJudXJZaWtmM0k/view?usp=sharing">
-      <div class="col-sm-4 panel panel-default text-center bg-grey">
-        <span class="glyphicon glyphicon-list-alt logo-small"></span>
-        <h4 style="color:#303030;">RESUME</h4>
-        <p>Click here to see my full Resume</p>
+</div>
+
+<div id="Electron_proj2" class="container-fluid text-center information bg-grey">
+  <h2>Electronics Projects</h2>
+  <h4>Data Acquisition and Sensors</h4>
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div class="thumbnail proj-desc bg-grey">
+        <img src="assets/michigan_formula.jpg" alt="shifting">
+        <p>To help other subteams properly validate their designs, a custom data acquisition unit was built. Featuring a communication port, accelerometers, thermocouple amplification, and a microcontroller, the data acquisition unit is able to log data from various sensors on the car and from the ECU in csv files for performing design validation after the car is built and ready for testing.</p>
       </div>
-    </a>
+    </div>  
+    <div class="col-sm-6">
+      <div class="thumbnail proj-desc bg-grey">
+        <img src="assets/michigan_formula.jpg" alt="PDM">
+        <p>A myriad of sensors are available on the car. These include sensors to allow proper engine calibration: manifold air pressure, oil pressure, lambda, exhaust gas temperature, crank position, cam position, coolant temperature, and inlet air temperature. Sensors available for dynamics validation include: shock position, brake temperature, brake pressure, and accelerometers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Electron_proj3" class="container-fluid information">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Electronics Projects</h2>
+      <h4>Power and Communication</h4>
+      <p>With so many modules and sensors available on the vehicle, there needs to be a way for the components to both get power and talk to each other. The power requirement is met by a stable and efficient power distribution module that uses MOSFETs to control power delivery, fuses to protect sensitive components, and regulators to change voltages. Communication between the ECU, data acquisition, shifting controller, steering wheel, and sensors is accomplished through a communication bus running the CAN protocol.</p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <img src="assets/michigan_formula.jpg" class="img-responsive"></img>
+    </div>
   </div>
 </div>
 
 <!-- Container (Powertrain Section) -->
 <div id="Power_proj" class="container-fluid information bg-grey">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>Powertrain</h2><br>
-      <p>The powertrain subteam is responsible for everything that makes the four stages of a four stroke engine work along with how the engine itself interacts with the rest of the car (drivetrain). Some of the projects I have worked on for powertrain include the intake design, gearing calculations, and especially calibration. My biggest role has been in the calibration area which involves a lengthy and iterative process of configuring the ECU with respect to ignition timing, fuel injector duty cycle, air pressure, and various other parameters from the variety of sensors available. With the right parameter settings, the engine can better utilize the air and fuel it combusts to make more power. The picture to the right shows the calibration process in action at a chassis dyno.</p>
-    </div>
     <div class="col-sm-4 text-center">
       <img src="assets/michigan_formula.jpg" class="img-responsive"></img>
+    </div>
+    <div class="col-sm-8">
+      <h2>Powertrain</h2><br>
+      <p>The powertrain subteam is responsible for everything that makes the four stages of a four stroke engine work along with how the engine itself interacts with the rest of the car (drivetrain). Some of the projects I have worked on for powertrain include the intake design, gearing calculations, and especially calibration. My biggest role has been in the calibration area which involves a lengthy and iterative process of configuring the ECU with respect to ignition timing, fuel injector duty cycle, air pressure, and various other parameters from the variety of sensors available. With the right parameter settings, the engine can better utilize the air and fuel it combusts to make more power. The picture to the left shows the calibration process in action at a chassis dyno.</p>
     </div>
   </div>
 </div>
