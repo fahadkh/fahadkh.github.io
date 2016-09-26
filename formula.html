@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/styling.css"></link>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="formula_page" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -61,15 +61,117 @@
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid information bg-grey">
+<!-- Container (Electronics Section) -->
+<div id="Electrons" class="container-fluid information bg-grey">
   <div class="row">
     <div class="col-sm-4 text-center">
-      <img src="assets/About_me.jpg" class="img-responsive"></img>
+      <img src="assets/michigan_formula.jpg" class="img-responsive"></img>
     </div>
     <div class="col-sm-8">
-      <h2>Powertrain</h2><br>
-      <p>The powertrain subteam is responsible for everything that makes the four stages of a four stroke engine work along with how the engine itself interacts with the rest of the car (drivetrain). Some of the projects I have worked on for powertrain include the intake design, gearing calculations, and especially calibration. My biggest role has been in the calibration area which involves a lengthy and iterative process of configuring the ECU with respect to ignition timing, fuel injector duty cycle, air pressure, and various other parameters. With the right parameter settings, the engine can better utilize the air and fuel it combusts to make more power. The picture to the left shows the calibration process in action at a chassis dyno.</p>
+      <h2>Electronics</h2><br>
+      <p>The only thing separating our cars from go-karts are their sophisticated electronics and controls (but don't tell the other subteams that). The wiring harness, sensors, communication network, and control logic represent a large portion of my contribution to the team. The process involves designing and updating the wiring harness to include important sensors, control systems, and actuators, continues with building and testing of individual modules, and concludes with assembly of the complete system. These modules include electro-pnuematic shifting, a multifunction steering wheel, power distribution, data acquisition, and an engine sensor/ECU harness. </p>
     </div>
   </div>
 </div>
+
+<!-- Container (Services Section) -->
+<div id="Electron_proj" class="container-fluid text-center information">
+  <h2>Electronics</h2>
+  <h4>Project details</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4 skill-tile">
+      <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <h4>DEVELOPMENT</h4>
+      <p>Strong experience in C/C++, Python, and Java</p>
+    </div>
+    <div class="col-sm-4 skill-tile">
+      <span class="glyphicon glyphicon-cloud logo-small"></span>
+      <h4>NETWORKING</h4>
+      <p>Extensive work in cloud computing, sensor networks, and network protocols (HTTP, TCP/UDP, CAN, Ethernet)</p>
+    </div>
+    <div class="col-sm-4 skill-tile">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>SECURITY</h4>
+      <p>Classroom and work experience in network and cloud security</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4 skill-tile">
+      <span class="glyphicon glyphicon-hdd logo-small"></span>
+      <h4>ENVIRONMENTS</h4>
+      <p>Experience with Linux, Windows, Android, and microcontrollers</p>
+    </div>
+    <div class="col-sm-4 skill-tile">
+      <span class="glyphicon glyphicon-picture logo-small"></span>
+      <h4>UI/GRAPHIC DESIGN</h4>
+      <p>Working knowledge of Photoshop, HTML, CSS, Javascript, and Bootstrap</p>
+    </div>
+    <a href="https://drive.google.com/file/d/0B2wHvuRgrcN6bXJudXJZaWtmM0k/view?usp=sharing">
+      <div class="col-sm-4 panel panel-default text-center bg-grey">
+        <span class="glyphicon glyphicon-list-alt logo-small"></span>
+        <h4 style="color:#303030;">RESUME</h4>
+        <p>Click here to see my full Resume</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Powertrain Section) -->
+<div id="Power_proj" class="container-fluid information bg-grey">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Powertrain</h2><br>
+      <p>The powertrain subteam is responsible for everything that makes the four stages of a four stroke engine work along with how the engine itself interacts with the rest of the car (drivetrain). Some of the projects I have worked on for powertrain include the intake design, gearing calculations, and especially calibration. My biggest role has been in the calibration area which involves a lengthy and iterative process of configuring the ECU with respect to ignition timing, fuel injector duty cycle, air pressure, and various other parameters from the variety of sensors available. With the right parameter settings, the engine can better utilize the air and fuel it combusts to make more power. The picture to the right shows the calibration process in action at a chassis dyno.</p>
+    </div>
+    <div class="col-sm-4 text-center">
+      <img src="assets/michigan_formula.jpg" class="img-responsive"></img>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
